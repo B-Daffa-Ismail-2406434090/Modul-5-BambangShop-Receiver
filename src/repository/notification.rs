@@ -22,5 +22,4 @@ impl NotificationRepository{
         return NOTIFICATIONS.read().unwrap()
             .iter().map(|f| format!("{}", f.clone())).collect();
     }
-    }
 }
